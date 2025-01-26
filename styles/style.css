@@ -1,0 +1,208 @@
+@import url(' https: //fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Luckiest+Guy&display=swap');
+
+:root {
+    --cor-principal: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-quartenaria: #ffd00b;
+    --cor-hoover: #272727;
+    --fonte-principal: font-family: "Luckiest Guy", serif;
+    --fonte-secundaria: font-family: "Krona One", sans-serif;
+    --fonte-terciaria: font-family: "Libre Franklin", serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+p {
+    margin: 10px;
+    border: 2px solid var(--cor-terciaria);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+body {
+    /* height: 100vh; */
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    font-size: 1.5rem;
+}
+
+.cabecalho__menu_link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    font-style: bold;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    font-family: var(--fonte-terciaria);
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao___conteudo___titulo {
+    font-size: 2.25rem;
+    color: var(--cor-secundaria);
+
+
+}
+
+.apresentacao___conteudo___titulo__titulo {
+
+    font-size: 3.2rem;
+    color: var(--cor-terciaria);
+}
+
+
+
+.apresentacao___conteudo___texto {
+
+    font-size: 1.5rem;
+    font-family: var(--fonte-terciaria);
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+
+.apresentacao__links__subtitulos {
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-style: normal;
+
+}
+
+.apresentacao__links__navegacao {
+
+    /* background-color: #22d4fd; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    font-style: bold;
+
+}
+
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.apresentacao__links__links:hover {
+
+    background-color: var(--cor-hoover);
+    color: var(--cor-quartenaria);
+
+}
+
+.apresentacao___conteudo___texto:hover {
+    background-color: var(--cor-hoover);
+    color: var(--cor-quartenaria);
+}
+
+.apresentacao___conteudo___titulo:hover {
+    /* background-color: var(--cor-hoover); */
+    color: var(--cor-quartenaria);
+
+}
+
+.apresentacao___conteudo___titulo__titulo:hover {
+    /* background-color: var(--cor-hoover); */
+    color: var(--cor-quartenaria)b;
+
+}
+
+.apresentacao__links:hover {
+    /* background-color: var(--cor-hoover); */
+    color: var(--cor-quartenaria);
+
+}
+
+.rodape {
+    margin: 0px;
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    border-radius: 0px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-style: bold;
+}
+
+@media (max-width:1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+
+    }
+
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
